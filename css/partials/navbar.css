@@ -1,0 +1,153 @@
+.header {
+    padding: 40px 0 0 55px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo a img {
+    width: 48px;
+    height: 48px;
+}
+
+.nav-toggle-btn {
+    height: 24px;
+    width: 21px;
+    background-image: url(../assets/shared/icon-hamburger.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 48px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5px);
+    padding: 0 165px 0 123px;
+}
+
+.nav-btn {
+    font-family: var(--ff-condensed);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-block: 38px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-btn:hover {
+    border-color: hsla(var(--clr-light), 0.5);
+}
+
+.nav-btn-active,
+.nav-btn-active:hover {
+    border-color: hsl(var(--clr-light));
+}
+
+.number {
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+.line {
+    height: 1px;
+    width: 34%;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-left: 48px;
+    transform: translateX(62px);
+    z-index: 1;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 0 0 0 38px;
+    }
+
+    .nav-menu {
+        gap: 38px;
+        padding: 0 48px;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .logo {
+        position: static;
+        transform: translateY(0);
+    }
+
+    .line,
+    .number {
+        display: none;
+    }
+}
+
+@media (max-width: 610px) {
+    .header {
+        padding: 24px;
+    }
+
+    .logo a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        inset: 0 0 0 32%;
+        flex-direction: column;
+        gap: 24px;
+        padding: max(118px, 26vw) 0 0 max(32px, 6vw);
+        transform: translateX(100%);
+    }
+
+    .nav-btn {
+        padding: 4px 0;
+        border-bottom: none;
+        border-right: 3px solid transparent;
+        width: 100%;
+    }
+
+    .nav-btn-active,
+    .nav-btn-active:hover {
+        border-color: hsl(var(--clr-light));
+    }
+
+    .number {
+        display: inline-block;
+    }
+
+    .nav-toggle-btn {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    .nav-toggle-btn[data-nav-open] {
+        background-image: url(../assets/shared/icon-close.svg);
+    }
+
+    .nav-menu[data-nav-open] {
+        transform: translate(0);
+        transition: transform 1s;
+    }
+}

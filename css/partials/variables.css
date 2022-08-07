@@ -1,0 +1,8 @@
+:root {
+  --clr-dark: 230, 35%, 7%;
+  --clr-accent: 231, 77%, 90%;
+  --clr-light: 0, 0%, 100%;
+  --ff-barlow: "Barlow", sans-serif;
+  --ff-condensed: "Barlow Condensed", sans-serif;
+  --ff-bellefair: "Bellefair", serif;
+}
