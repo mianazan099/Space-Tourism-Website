@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
+@import url(./partials/variables.css);
+@import url(./partials/reset.css);
+@import url(./partials/navbar.css);
+
+body {
+  background-color: hsl(var(--clr-dark));
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body {
+  min-height: 100vh;
+  width: min(100vw, 1440px);
+  margin: 0 auto;
+  color: hsl(var(--clr-light));
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main {
+  width: min(1302px, 100%);
+  padding: 0 96px 131px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content>:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.h5 {
+  font-family: var(--ff-condensed);
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: hsl(var(--clr-accent));
+}
+
+.h1 {
+  font-family: var(--ff-bellefair);
+  font-size: 150px;
+  line-height: 172px;
+  text-transform: uppercase;
+}
+
+.body-txt {
+  font-family: var(--ff-barlow);
+  font-size: 18px;
+  line-height: 32px;
+  color: hsl(var(--clr-accent));
+  max-width: 45ch;
+}
+
+.explore-btn {
+  height: 274px;
+  width: 274px;
+  background: #FFFFFF;
+  color: #0B0D17;
+  display: inline-grid;
+  place-content: center;
+  border-radius: 50%;
+  font-family: var(--ff-bellefair);
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: box-shadow 500ms;
+}
+
+.explore-btn:hover {
+  box-shadow: 0 0 0 88px hsla(var(--clr-light), .1);
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+  }
+
+  .body {
+    gap: 105px;
+  }
+
+  .main {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 90px;
+    gap: 155px;
+  }
+
+  .h5 {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+
+  .h1 {
+    line-height: 150px;
+  }
+
+  .body-txt {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 49ch;
+  }
+
+  .explore-btn {
+    height: 242px;
+    width: 242px;
+  }
+}
+
+@media (max-width: 610px) {
+  body {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+  }
+
+  .main {
+    gap: 80px;
+    padding-bottom: 48px;
+  }
+
+  .body {
+    gap: 48px;
+  }
+
+  .content>:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .h5 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .body-txt {
+    font-size: 15px;
+    line-height: 25px;
+    width: 38ch;
+  }
+
+  .explore-btn {
+    height: 150px;
+    width: 150px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+  }
+
+  .explore-btn:hover {
+    box-shadow: 0 0 0 55px hsla(var(--clr-light), .1);
+  }
+}

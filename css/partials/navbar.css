@@ -1,5 +1,6 @@
 .header {
     padding: 40px 0 0 55px;
+    color: hsl(var(--clr-light));
 }
 
 .navbar {
@@ -24,7 +25,7 @@
 .nav-toggle-btn {
     height: 24px;
     width: 21px;
-    background-image: url(../assets/shared/icon-hamburger.svg);
+    background-image: url(../../assets/shared/icon-hamburger.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -143,7 +144,7 @@
     }
 
     .nav-toggle-btn[data-nav-open] {
-        background-image: url(../assets/shared/icon-close.svg);
+        background-image: url(../../assets/shared/icon-close.svg);
     }
 
     .nav-menu[data-nav-open] {
