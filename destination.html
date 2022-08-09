@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="./css/destination.css" />
+  </head>
+  <body>
+    <div class="body">
+      <header class="header">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="/">
+              <img src="./assets/shared/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="line"></div>
+          <ul class="nav-menu">
+            <li>
+              <a href="/" class="nav-btn">
+                <span class="number">00</span>Home
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-btn nav-btn-active">
+                <span class="number">01</span>Destination
+              </a>
+            </li>
+            <li>
+              <a href="./crew.html" class="nav-btn">
+                <span class="number">02</span>Crew
+              </a>
+            </li>
+            <li>
+              <a href="./technology.html" class="nav-btn">
+                <span class="number">03</span>Technology
+              </a>
+            </li>
+          </ul>
+          <button class="nav-toggle-btn"></button>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="left">
+          <h5 class="h5">
+            <span class="page-number">01</span>Pick your destination
+          </h5>
+          <div class="destination-img">
+            <img
+              src="./assets/destination/image-moon.webp"
+              alt="destination image"
+            />
+          </div>
+        </div>
+        <div class="content">
+          <div class="tab-btn-container">
+            <button data-number="0" class="tab-btn tab-btn-active">Moon</button>
+            <button data-number="1" class="tab-btn">Mars</button>
+            <button data-number="2" class="tab-btn">Europa</button>
+            <button data-number="3" class="tab-btn">Titan</button>
+          </div>
+          <div class="destination-content">
+            <h2 class="destination-name">Moon</h2>
+            <p class="destination-info">
+              See our planet as you've never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you're there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+          </div>
+          <hr />
+          <div class="destination-stats">
+            <div class="stat-container">
+              <p class="stat-name">Avg. distance</p>
+              <p class="stat-value distance">384,400 km</p>
+            </div>
+            <div class="stat-container">
+              <p class="stat-name">Est. travel time</p>
+              <p class="stat-value travel">3 days</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/navbar.js"></script>
+    <script type="module" src="./js/destination.js"></script>
+  </body>
+</html>

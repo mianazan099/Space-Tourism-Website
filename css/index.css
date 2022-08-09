@@ -9,12 +9,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
 }
 
 .body {
   min-height: 100vh;
-  width: min(100vw, 1440px);
+  width: min(100%, 1440px);
   margin: 0 auto;
   color: hsl(var(--clr-light));
   display: flex;
