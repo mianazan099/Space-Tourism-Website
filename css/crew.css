@@ -107,7 +107,6 @@ body {
 .member-img {
     height: 100%;
     width: 100%;
-    background-image: url(../assets/crew/image-douglas-hurley.webp);
     background-position: bottom center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
