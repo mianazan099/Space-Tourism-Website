@@ -5,7 +5,7 @@
 
 body {
     background-color: hsl(var(--clr-dark));
-    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,9 +16,98 @@ body {
     width: min(100%, 1440px);
     margin: 0 auto;
     color: hsl(var(--clr-light));
-    display: flex;
-    flex-direction: column;
-    gap: 250px;
     position: relative;
     overflow-x: hidden;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-content: space-between; */
+    /* margin: 76px 100px 0 165px; */
+    /* max-width: 1120px; */
+    /* padding-inline: 40px; */
+    gap: 2rem;
+}
+
+.main>* {
+    /* flex: 1; */
+}
+
+.content {
+    margin: 76px 0 94px 165px;
+}
+
+.h5 {
+    font-family: var(--ff-condensed);
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    margin-bottom: 154px;
+}
+
+.page-number {
+    font-weight: 700;
+    color: hsla(var(--clr-light), .25);
+    margin-right: 24px;
+}
+
+.member-role {
+    font-family: var(--ff-bellefair);
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: hsla(var(--clr-light), .5);
+    margin-bottom: 15px;
+}
+
+.member-name {
+    font-family: var(--ff-bellefair);
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.member-info {
+    font-family: var(--ff-barlow);
+    font-size: 18px;
+    line-height: 32px;
+    color: hsl(var(--clr-accent));
+    max-width: 45ch;
+    margin-bottom: 120px;
+}
+
+.tab-btn-container {
+    /* margin-bottom: 94px; */
+}
+
+.tab-btn-container>:not(:last-child) {
+    margin-right: 24px;
+}
+
+.tab-btn {
+    height: 15px;
+    width: 15px;
+    background: hsla(var(--clr-light), .17);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tab-btn:hover {
+    background: hsla(var(--clr-light), .5);
+}
+
+.tab-btn-active,
+.tab-btn-active:hover {
+    background: hsla(var(--clr-light), 1);
+}
+
+.member-img {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/crew/image-douglas-hurley.webp);
+    background-position: bottom center;
+    background-repeat: no-repeat; 
 }

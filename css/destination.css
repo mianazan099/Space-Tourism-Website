@@ -41,8 +41,7 @@ body {
 
 .page-number {
     font-weight: 700;
-    mix-blend-mode: normal;
-    opacity: 0.25;
+    color: hsla(var(--clr-light), .25);
     margin-right: 28px;
 }
 
