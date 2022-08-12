@@ -2,7 +2,7 @@ const tabBtnList = document.querySelectorAll(".tab-btn");
 const memberRole = document.querySelector(".member-role");
 const memberName = document.querySelector(".member-name");
 const memberInfo = document.querySelector(".member-info");
-const memberImg = document.querySelector(".member-img");
+const memberImg = document.querySelector(".member-img img");
 
 const crew = [
   {
@@ -41,6 +41,6 @@ tabBtnList.forEach((tab) => {
     memberRole.textContent = data.role;
     memberName.textContent = data.name;
     memberInfo.textContent = data.bio;
-    memberImg.style.backgroundImage = `url('${data.image}')`;
+    memberImg.src = data.image;
   });
 });
