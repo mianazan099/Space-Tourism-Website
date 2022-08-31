@@ -4,255 +4,255 @@
 @import url(./partials/navbar.css);
 
 body {
-    background-color: hsl(var(--clr-dark));
-    background-image: url(../assets/destination/background-destination-desktop.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: hsl(var(--clr-dark));
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .body {
-    min-height: 100vh;
-    width: min(100%, 1440px);
-    margin: 0 auto;
-    color: hsl(var(--clr-light));
-    position: relative;
-    overflow-x: hidden;
+  min-height: 100vh;
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  color: hsl(var(--clr-light));
+  position: relative;
+  overflow-x: hidden;
 }
 
 .main {
-    display: flex;
-    justify-content: space-between;
-    margin: 76px auto 118px auto;
-    max-width: 1190px;
-    align-items: flex-end;
-    padding-inline: 40px;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 76px auto 118px auto;
+  max-width: 1190px;
+  align-items: flex-end;
+  padding-inline: 40px;
+  gap: 2rem;
 }
 
 .h5 {
-    font-family: var(--ff-condensed);
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 4.725px;
-    text-transform: uppercase;
-    margin-bottom: 96px;
+  font-family: var(--ff-condensed);
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  margin-bottom: 96px;
 }
 
 .page-number {
-    font-weight: 700;
-    color: hsla(var(--clr-light), .25);
-    margin-right: 28px;
+  font-weight: 700;
+  color: hsla(var(--clr-light), 0.25);
+  margin-right: 28px;
 }
 
 .destination-img {
-    padding-left: 4vw;
+  padding-left: 4vw;
 }
 
 .destination-img img {
-    width: 445px;
-    aspect-ratio: 1;
+  width: 445px;
+  aspect-ratio: 1;
 }
 
 .content {
-    max-width: 445px;
+  max-width: 445px;
 }
 
 .tab-btn-container {
-    margin-bottom: 36px;
+  margin-bottom: 36px;
 }
 
-.tab-btn-container>:not(:last-child) {
-    margin-right: 36px;
+.tab-btn-container > :not(:last-child) {
+  margin-right: 36px;
 }
 
 .tab-btn {
-    font-family: var(--ff-condensed);
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 2.7px;
-    padding-bottom: 12px;
-    text-transform: uppercase;
-    border-bottom: 3px solid transparent;
+  font-family: var(--ff-condensed);
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
 }
 
 .tab-btn:hover {
-    border-color: hsla(var(--clr-light), .5);
+  border-color: hsla(var(--clr-light), 0.5);
 }
 
 .tab-btn-active,
 .tab-btn-active:hover {
-    border-color: hsl(var(--clr-light));
+  border-color: hsl(var(--clr-light));
 }
 
 .destination-name {
-    font-family: var(--ff-bellefair);
-    font-size: 100px;
-    line-height: 115px;
-    text-transform: uppercase;
-    margin-bottom: 14px;
+  font-family: var(--ff-bellefair);
+  font-size: 100px;
+  line-height: 115px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .destination-info {
-    font-family: var(--ff-barlow);
-    font-size: 18px;
-    line-height: 32px;
-    color: hsl(var(--clr-accent));
-    margin-bottom: 54px;
+  font-family: var(--ff-barlow);
+  font-size: 18px;
+  line-height: 32px;
+  color: hsl(var(--clr-accent));
+  margin-bottom: 54px;
 }
 
 hr {
-    border: none;
-    border-top: 1px solid #383B4B;
-    margin-bottom: 28px;
+  border: none;
+  border-top: 1px solid #383b4b;
+  margin-bottom: 28px;
 }
 
 .destination-stats {
-    display: flex;
+  display: flex;
 }
 
 .stat-container {
-    flex: 1;
+  flex: 1;
 }
 
 .stat-name {
-    font-family: var(--ff-condensed);
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 2.3625px;
-    text-transform: uppercase;
-    color: hsl(var(--clr-accent));
-    margin-bottom: 12px;
+  font-family: var(--ff-condensed);
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: hsl(var(--clr-accent));
+  margin-bottom: 12px;
 }
 
 .stat-value {
-    font-family: var(--ff-bellefair);
-    font-size: 28px;
-    line-height: 32px;
-    text-transform: uppercase;
+  font-family: var(--ff-bellefair);
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
 }
 
-@media (max-width:1000px) {
-    body {
-        background-image: url(../assets/destination/background-destination-tablet.jpg);
-    }
+@media (max-width: 1000px) {
+  body {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
 
-    .main {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-        margin-bottom: 62px;
-        gap: 52px;
-    }
+  .main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 62px;
+    gap: 52px;
+  }
 
-    .left {
-        width: 100%;
-    }
+  .left {
+    width: 100%;
+  }
 
-    .h5 {
-        margin-bottom: 60px;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 3.375px;
-    }
+  .h5 {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
 
-    .page-number {
-        margin-right: 19px;
-    }
+  .page-number {
+    margin-right: 19px;
+  }
 
-    .destination-img {
-        padding: 0;
-    }
+  .destination-img {
+    padding: 0;
+  }
 
-    .destination-img img {
-        margin-inline: auto;
-        width: 300px;
-    }
+  .destination-img img {
+    margin-inline: auto;
+    width: 300px;
+  }
 
-    .content {
-        text-align: center;
-        max-width: 100%;
-    }
+  .content {
+    text-align: center;
+    max-width: 100%;
+  }
 
-    .tab-btn-container {
-        margin-bottom: 32px;
-    }
+  .tab-btn-container {
+    margin-bottom: 32px;
+  }
 
-    .destination-name {
-        font-size: 80px;
-        line-height: 92px;
-        margin-bottom: 8px;
-    }
+  .destination-name {
+    font-size: 80px;
+    line-height: 92px;
+    margin-bottom: 8px;
+  }
 
-    .destination-info {
-        font-size: 16px;
-        line-height: 28px;
-        max-width: 62ch;
-        margin-bottom: 50px;
-    }
+  .destination-info {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 62ch;
+    margin-bottom: 50px;
+  }
 
-    .destination-stats {
-        max-width: 450px;
-        margin: 0 auto;
-    }
+  .destination-stats {
+    max-width: 450px;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width:610px) {
-    body {
-        background-image: url(../assets/destination/background-destination-mobile.jpg);
-    }
+@media (max-width: 610px) {
+  body {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+  }
 
-    .main {
-        padding-inline: 24px;
-        text-align: center;
-        margin-top: 0;
-        gap: 26px;
-        margin-bottom: 54px;
-    }
+  .main {
+    padding-inline: 24px;
+    text-align: center;
+    margin-top: 0;
+    gap: 26px;
+    margin-bottom: 54px;
+  }
 
-    .h5 {
-        font-size: 16px;
-        line-height: 19px;
-        letter-spacing: 2.7px;
-        margin-bottom: 32px;
-    }
+  .h5 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-bottom: 32px;
+  }
 
-    .destination-img img {
-        width: 170px;
-    }
+  .destination-img img {
+    width: 170px;
+  }
 
-    .tab-btn-container {
-        margin-bottom: 20px;
-    }
+  .tab-btn-container {
+    margin-bottom: 20px;
+  }
 
-    .tab-btn-container>:not(:last-child) {
-        margin-right: 28px;
-    }
+  .tab-btn-container > :not(:last-child) {
+    margin-right: 28px;
+  }
 
-    .tab-btn {
-        font-size: 14px;
-        line-height: 17px;
-        padding-bottom: 8px;
-    }
+  .tab-btn {
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 8px;
+  }
 
-    .destination-name {
-        font-size: 56px;
-        line-height: 64px;
-        margin-bottom: 1px;
-    }
+  .destination-name {
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 1px;
+  }
 
-    .destination-info {
-        font-size: 15px;
-        line-height: 25px;
-        margin-bottom: 32px;
-    }
+  .destination-info {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 32px;
+  }
 
-    hr {
-        margin-bottom: 32px;
-    }
+  hr {
+    margin-bottom: 32px;
+  }
 
-    .destination-stats {
-        flex-direction: column;
-        gap: 32px;
-    }
+  .destination-stats {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
