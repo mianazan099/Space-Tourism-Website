@@ -109,7 +109,7 @@ body {
   margin-bottom: 34px;
 }
 
-@media (min-width: 610px) {
+@media (min-width: 611px) {
   body {
     background-image: url(../assets/crew/background-crew-tablet.jpg);
   }
@@ -164,37 +164,40 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1001px) {
   body {
     background-image: url(../assets/crew/background-crew-desktop.jpg);
   }
 
   .main {
-    /* padding: 0 24px 24px; */
-    /* text-align: center; */
+    padding: 76px 100px 0 165px;
+    text-align: left;
+    max-width: 1300px;
+    padding: 76px 38px 0 clamp(38px, 6.115vw, 88px);
+    margin-inline: auto;
   }
 
   .h5 {
-    /* font-family: var(--ff-condensed); */
-    /* font-size: 16px; */
-    /* line-height: 19px; */
-    /* letter-spacing: 2.7px; */
-    /* text-transform: uppercase; */
-    /* margin-bottom: 32px; */
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    margin-bottom: 0;
   }
 
   .page-number {
-    /* font-weight: 700; */
-    /* color: hsla(var(--clr-light), 0.25); */
-    /* margin-right: 16px; */
+    margin-right: 24px;
   }
 
   .main-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+    /* margin-left: 100px; */
   }
 
   .member-img {
-    /* height: 224px; */
-    /* border-bottom: 1px solid hsl(231, 15%, 26%); */
+    height: 100%;
   }
 
   .member-img img {
@@ -202,8 +205,18 @@ body {
     /* margin: 0 auto; */
   }
 
+  /* .content {
+    display: flex;
+    flex-direction: column-reverse;
+  } */
+
   .content {
+    margin-top: 154px;
   }
+
+  /* .tab-btn-container {
+    margin-block: 40px;
+  } */
 
   .tab-btn-container {
     /* margin-block: 30px; */
@@ -234,27 +247,21 @@ body {
   }
 
   .member-role {
-    /* font-family: var(--ff-bellefair); */
-    /* font-size: 16px; */
-    /* line-height: 18px; */
-    /* text-transform: uppercase; */
-    /* color: hsla(var(--clr-light), 0.5); */
-    /* margin-bottom: 8px; */
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 15px;
   }
 
   .member-name {
-    /* font-family: var(--ff-bellefair); */
-    /* font-size: 24px; */
-    /* line-height: 28px; */
-    /* text-transform: uppercase; */
-    /* margin-bottom: 16px; */
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 26px;
   }
 
   .member-info {
-    /* font-family: var(--ff-barlow); */
-    /* font-size: 15px; */
-    /* line-height: 25px; */
-    /* color: hsl(var(--clr-accent)); */
-    /* margin-bottom: 34px; */
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0 0 26px;
+    max-width: 44ch;
   }
 }
