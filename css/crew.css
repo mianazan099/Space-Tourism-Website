@@ -187,7 +187,6 @@ body {
   }
 
   .member-img {
-    height: 650px;
     display: flex;
     align-items: flex-end;
   }
