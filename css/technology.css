@@ -4,21 +4,109 @@
 @import url(./partials/navbar.css);
 
 body {
-    background-color: hsl(var(--clr-dark));
-    background-image: url(../assets/home/background-home-desktop.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: hsl(var(--clr-dark));
+  background-image: url(../assets/technology/background-technology-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .body {
-    min-height: 100vh;
-    width: min(100%, 1440px);
-    margin: 0 auto;
-    color: hsl(var(--clr-light));
-    display: flex;
-    flex-direction: column;
-    gap: 250px;
-    position: relative;
-    overflow-x: hidden;
+  min-height: 100vh;
+  width: min(100%, 1440px);
+  margin: 0 auto;
+  color: hsl(var(--clr-light));
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main {
+  text-align: center;
+}
+
+.h5 {
+  font-family: var(--ff-condensed);
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.page-number {
+  font-weight: 700;
+  color: hsla(var(--clr-light), 0.25);
+  margin-right: 16px;
+}
+
+.main-container {
+}
+
+.tech-img {
+  /* width: 100%; */
+  margin-bottom: 34px;
+}
+
+.tech-img img {
+  /* width: 100%; */
+}
+
+.content {
+}
+
+.tab-btn-container {
+  margin-bottom: 26px;
+}
+
+.tab-btn-container > :not(:last-child) {
+  margin-right: 16px;
+}
+
+.tab-btn {
+  height: 40px;
+  width: 40px;
+  border: 1px solid hsla(var(--clr-light), 0.25);
+  border-radius: 50%;
+  font-family: var(--ff-bellefair);
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  border-color: hsl(var(--clr-light));
+}
+
+.tab-btn-active,
+.tab-btn-active:hover {
+  background-color: hsl(var(--clr-light));
+  border-color: hsl(var(--clr-light));
+  color: hsl(var(--clr-dark));
+}
+
+.content-container {
+}
+.terminology {
+  font-family: var(--ff-condensed);
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: hsla(var(--clr-accent), 0.5);
+  letter-spacing: 2.36px;
+  margin-bottom: 9px;
+}
+.tech-name {
+  font-family: var(--ff-bellefair);
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.tech-info {
+  font-family: var(--ff-barlow);
+  font-size: 15px;
+  line-height: 25px;
+  color: hsl(var(--clr-accent));
+  max-width: 40ch;
+  margin-inline: auto;
+  margin-bottom: 80px;
 }

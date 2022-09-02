@@ -74,6 +74,7 @@ body {
   padding-bottom: 12px;
   text-transform: uppercase;
   border-bottom: 3px solid transparent;
+  cursor: pointer;
 }
 
 .tab-btn:hover {
