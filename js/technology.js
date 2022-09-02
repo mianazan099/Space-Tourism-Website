@@ -1,8 +1,7 @@
 const tabBtnList = document.querySelectorAll(".tab-btn");
-const memberRole = document.querySelector(".member-role");
-const memberName = document.querySelector(".member-name");
-const memberInfo = document.querySelector(".member-info");
-const memberImg = document.querySelector(".member-img img");
+const techName = document.querySelector(".tech-name");
+const techInfo = document.querySelector(".tech-info");
+const techImg = document.querySelector(".tech-img img");
 
 const technology = [
   {
@@ -40,10 +39,9 @@ tabBtnList.forEach((tab) => {
       t.classList.remove("tab-btn-active");
     });
     tab.classList.add("tab-btn-active");
-    const data = crew[tab.getAttribute("data-number")];
-    memberRole.textContent = data.role;
-    memberName.textContent = data.name;
-    memberInfo.textContent = data.bio;
-    memberImg.src = data.image;
+    const data = technology[tab.getAttribute("data-number")];
+    techName.textContent = data.name;
+    techInfo.textContent = data.description;
+    techImg.src = data.images.landscape;
   });
 });
