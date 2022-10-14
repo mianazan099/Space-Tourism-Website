@@ -39,20 +39,31 @@ body {
   margin-right: 16px;
 }
 
-.main-container {
-}
+/* .main-container {} */
 
 .tech-img {
-  /* width: 100%; */
+  width: 100%;
+  aspect-ratio: 2.477;
+  background-image: var(--url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 34px;
 }
 
-.tech-img img {
-  /* width: 100%; */
+.img-lv {
+  --url: url(../assets/technology/image-launch-vehicle-landscape.jpg);
 }
 
-.content {
+.img-sc {
+  --url: url(../assets/technology/image-space-capsule-landscape.jpg);
 }
+
+.img-sp {
+  --url: url(../assets/technology/image-spaceport-landscape.jpg);
+}
+
+/* .content {} */
 
 .tab-btn-container {
   margin-bottom: 26px;
@@ -83,8 +94,8 @@ body {
   color: hsl(var(--clr-dark));
 }
 
-.content-container {
-}
+/* .content-container {} */
+
 .terminology {
   font-family: var(--ff-condensed);
   font-size: 14px;
@@ -94,6 +105,7 @@ body {
   letter-spacing: 2.36px;
   margin-bottom: 9px;
 }
+
 .tech-name {
   font-family: var(--ff-bellefair);
   font-size: 24px;
@@ -101,6 +113,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+
 .tech-info {
   font-family: var(--ff-barlow);
   font-size: 15px;
@@ -109,4 +122,141 @@ body {
   max-width: 40ch;
   margin-inline: auto;
   margin-bottom: 80px;
+}
+
+@media (min-width: 611px) {
+  body {
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
+  }
+
+  .h5 {
+    margin: 40px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+
+  .tech-img {
+    height: 310px;
+    margin-bottom: 56px;
+  }
+
+  .tab-btn-container {
+    margin-bottom: 44px;
+  }
+
+  .tab-btn {
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+  }
+
+  .terminology {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    margin-bottom: 16px;
+  }
+
+  .tech-name {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .tech-info {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 100px;
+    max-width: 50ch;
+  }
+}
+@media (min-width: 1001px) {
+  body {
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+  }
+
+  .main {
+    max-width: 1330px;
+    margin-left: auto;
+    padding-left: 55px;
+    margin-bottom: 100px;
+  }
+
+  .h5 {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    margin: 76px auto 26px auto;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .tech-img {
+    flex: 2;
+    aspect-ratio: 0.977;
+    margin-bottom: 0;
+    height: 100%;
+  }
+
+  .img-lv {
+    --url: url(../assets/technology/image-launch-vehicle-portrait.jpg);
+  }
+
+  .img-sc {
+    --url: url(../assets/technology/image-space-capsule-portrait.jpg);
+  }
+
+  .img-sp {
+    --url: url(../assets/technology/image-spaceport-portrait.jpg);
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 12%;
+    flex: 3;
+  }
+
+  .tab-btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 0;
+  }
+
+  .tab-btn-container > :not(:last-child) {
+    margin-right: 0;
+  }
+
+  .tab-btn {
+    height: 80px;
+    width: 80px;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+
+  .terminology {
+    margin-bottom: 12px;
+  }
+
+  .tech-name {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .tech-info {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 43.75ch;
+    margin-inline: 0;
+    margin-bottom: 0;
+  }
 }
