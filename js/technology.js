@@ -41,10 +41,11 @@ tabBtnList.forEach((tab) => {
       t.classList.remove("tab-btn-active");
     });
     tab.classList.add("tab-btn-active");
-    const data = technology[tab.getAttribute("data-number")];
+    const dataNumber = tab.getAttribute("data-number");
+    const data = technology[dataNumber];
+    const className = classes[dataNumber];
     techName.textContent = data.name;
     techInfo.textContent = data.description;
-    let className = classes[tab.getAttribute("data-number")];
     techImg.classList = [];
     techImg.classList.add("tech-img", className);
   });

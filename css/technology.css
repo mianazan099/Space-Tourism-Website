@@ -39,8 +39,6 @@ body {
   margin-right: 16px;
 }
 
-/* .main-container {} */
-
 .tech-img {
   width: 100%;
   aspect-ratio: 2.477;
@@ -62,8 +60,6 @@ body {
 .img-sp {
   --url: url(../assets/technology/image-spaceport-landscape.jpg);
 }
-
-/* .content {} */
 
 .tab-btn-container {
   margin-bottom: 26px;
@@ -93,8 +89,6 @@ body {
   border-color: hsl(var(--clr-light));
   color: hsl(var(--clr-dark));
 }
-
-/* .content-container {} */
 
 .terminology {
   font-family: var(--ff-condensed);
